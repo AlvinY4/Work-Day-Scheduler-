@@ -10,91 +10,88 @@
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> 
+
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/Css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
-    <header class="jumbotron container-fluid border-bottom border-dark mb-2">
-      <h1 class="display-3 row justify-content-center">Work Day Scheduler</h1>
-      <p class="lead row justify-content-center">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead row justify-content-center"></p>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
       <!-- Timeblocks go here -->
       <!--9am-->
-      <div id="nine" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="nine-time" class="col-md-1">9am</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
-      </div>
+        <div id="hour9" class="row time-block">
+          <div class="col-1 hour pt-2 t-9">9am</div>
+          <textarea class="col-10 description d9"></textarea>
+          <button class="col-1 saveBtn b9"><i class="fas fa-save"></i></button>
+        </div> 
 
       <!--10am-->
-      <div id="ten" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="ten-time" class="col-md-1">10am</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
-      </div> 
+      <div id="hour10" class="row time-block">
+        <div class="col-1 hour pt-2 t-10">10am</div>
+        <textarea class="col-10 description d10"></textarea>
+        <button class="col-1 saveBtn b10"><i class="fas fa-save"></i></button>
+      </div>
 
       <!--11am-->
-      <div id="eleven" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="eleven-time" class="col-md-1">11am</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
+      <div id="hour11" class="row time-block">
+        <div class="col-1 hour pt-2 t-11">11am</div>
+        <textarea class="col-10 description d11"></textarea>
+        <button class="col-1 saveBtn b11"><i class="fas fa-save"></i></button>
       </div>
 
       <!--12pm-->
-      <div id="twelve" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="twelve-time" class="col-md-1">12pm</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
+      <div id="hour12" class="row time-block">
+        <div class="col-1 hour pt-2 t-12">12pm</div>
+        <textarea class="col-10 description d12"></textarea>
+        <button class="col-1 saveBtn b12"><i class="fas fa-save"></i></button>
       </div>
 
       <!--1pm-->
-      <div id="one" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="one-time" class="col-md-1">1pm</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
-      </div>
+      <div id="hour13" class="row time-block">
+        <div class="col-1 hour pt-2 t-1">1pm</div>
+        <textarea class="col-10 description d1"></textarea>
+        <button class="col-1 saveBtn b1"><i class="fas fa-save"></i></button>
+      </div> 
 
       <!--2pm-->
-      <div id="two" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="two-time" class="col-md-1">2pm</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
+      <div id="hour14" class="row time-block">
+        <div class="col-1 hour pt-2 t-2">2pm</div>
+        <textarea class="col-10 description d2"></textarea>
+        <button class="col-1 saveBtn b2"><i class="fas fa-save"></i></button>
       </div>
 
       <!--3pm-->
-      <div id="three" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="three-time" class="col-md-1">3pm</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
+      <div id="hour15" class="row time-block">
+        <div class="col-1 hour pt-2 t-3">3pm</div>
+        <textarea class="col-10 description d3"></textarea>
+        <button class="col-1 saveBtn b3"><i class="fas fa-save"></i></button>
       </div>
 
       <!--4pm-->
-      <div id="four" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="four-time" class="col-md-1">4pm</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
+      <div id="hour16" class="row time-block">
+        <div class="col-1 hour pt-2 t-4">4pm</div>
+        <textarea class="col-10 description d4"></textarea>
+        <button class="col-1 saveBtn b4"><i class="fas fa-save"></i></button>
       </div>
 
       <!--5pm-->
-      <div id="five" class="row justfy-content-md-center border-top border-bottom calendar-row">
-        <div id="five-time" class="col-md-1">5pm</div>
-        <textarea rows="3" id="text1" class="col-md-10"></textarea>
-        <button id="buttons" class="col-md-1"></button> 
-      </div>
-
-
-      
+      <div id="hour17" class="row time-block">
+        <div class="col-1 hour pt-2 t-5">5pm</div>
+        <textarea class="col-10 description d5"></textarea>
+        <button class="col-1 saveBtn b5"><i class="fas fa-save"></i></button>
+      </div> 
+ 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
